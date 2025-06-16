@@ -1,0 +1,94 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1750112404491
+  modified: 1750112404491
+  description: ""
+collection:
+  - url: http://127.0.0.1:8000/config/add/hide_menu
+    name: New Request
+    meta:
+      id: req_1ad58697f4dd429abfa9a3d4ef1de6c0
+      created: 1750112490732
+      modified: 1750113191890
+      isPrivate: false
+      description: ""
+      sortKey: -1750112490732
+    method: PUT
+    body:
+      mimeType: application/x-www-form-urlencoded
+    parameters:
+      - id: pair_e11fa54bed8d4c06acad1db9c8e7a727
+        name: setting_value
+        value: "true"
+        description: ""
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/x-www-form-urlencoded
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:8000/config/
+    name: New Request
+    meta:
+      id: req_3b6d0907401344cb8385e12560773618
+      created: 1750112670821
+      modified: 1750112683025
+      isPrivate: false
+      description: ""
+      sortKey: -1750112670821
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:8000/config/get/color
+    name: New Request
+    meta:
+      id: req_8d6eebd4ea8541d7a53a809919235d27
+      created: 1750113151901
+      modified: 1750113159932
+      isPrivate: false
+      description: ""
+      sortKey: -1750113151901
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1750112459449
+    modified: 1750112459449
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1750112459290
+    modified: 1750112459290
+    isPrivate: false
