@@ -4,4 +4,4 @@ COPY requirements.txt ./
 RUN python -m pip install -r requirements.txt
 EXPOSE 8000
 COPY . .
-CMD ["fastapi", "dev", "src/fastapi_demo/main.py"]
+CMD ["fastapi", "run", "src/fastapi_demo/main.py"]
