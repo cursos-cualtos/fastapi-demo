@@ -16,3 +16,7 @@ async def add(setting_name: str, setting_value: str):
 @app.get("/config/get/{setting_name}")
 async def get(setting_name):
     return {setting_name: r.get(setting_name)}
+
+@app.get("/hello")
+async def hello():
+    return {"message": "Hola Mundo!"}

@@ -3,5 +3,5 @@ WORKDIR /home/dev
 COPY requirements.txt ./
 RUN python -m pip install -r requirements.txt
 EXPOSE 8000
-COPY . .
-CMD ["fastapi", "run", "src/fastapi_demo/main.py"]
+COPY src/fastapi_demo/. .
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
